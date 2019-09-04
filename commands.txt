@@ -1,7 +1,26 @@
+
 git init
-git add 
-git commit 
-git remote add 
-git push
-git checkout -b
-git merge 
+git add test.txt
+git commit -m "inital project version"
+git remote add origin https://github.com/AlexanderLukashanets/Laba1.git
+git push -u origin master
+git checkout -b develop
+git checkout -b test
+git add .
+git commit -m "change test.txt"
+git push -u origin test
+git clone https://github.com/AlexanderLukashanets/Laba1.git
+git checkout develop
+git checkout -b test1
+git add .
+git commit -m "change test.txt 2"
+git push -u origin test1
+git checkout develop
+git merge test
+git merge test1
+git add .
+git commit -m "merged test and test1"
+git push origin develop
+git add commands.txt
+git commit -m "add commands.txt"
+git push origin develop
